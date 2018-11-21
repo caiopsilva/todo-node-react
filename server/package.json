@@ -1,0 +1,44 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node ./api/index.js",
+    "dev": "nodemon api/index.js --exec babel-node index.js",
+    "test": "jest --detectOpenHandles --runInBand",
+    "deploy": "git push heroku master"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^2.2.2",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "bcrypt": "^3.0.2",
+    "bookshelf": "^0.13.3",
+    "bookshelf-uuid": "^1.0.0",
+    "dotenv": "^6.1.0",
+    "graphql": "^14.0.2",
+    "graphql-playground-middleware-koa": "^1.6.7",
+    "joi": "^14.0.5",
+    "jsonwebtoken": "^8.3.0",
+    "knex": "^0.15.2",
+    "koa": "^2.6.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-graphql": "^0.8.0",
+    "koa-joi-validate": "^0.5.1",
+    "koa-jwt": "^3.5.1",
+    "koa-logger": "^3.2.0",
+    "koa-mount": "^4.0.0",
+    "koa-respond": "^2.1.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "lodash": "^4.17.11",
+    "pg": "^7.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.6"
+  }
+}

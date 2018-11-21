@@ -1,0 +1,10 @@
+version: '2'
+services: 
+  back:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment: 
+      NODE_ENV: development
+    ports:
+      - 3001:3001
